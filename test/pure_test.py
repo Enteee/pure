@@ -39,6 +39,48 @@ class TestPure(unittest.TestCase):
         self.assertEqual(fn_wrapped(test=1), True) 
         self.assertEqual(fn.call_count, 2)
 
+    def test_pure_none_backend(self):
+        fn = MagicMock(
+            name = 'fn',
+            return_value = True
+        )
+        backend = None
+        pure_dec = pure(backend)
+        fn_wrapped = pure_dec(fn)
+
+        self.assertEqual(fn_wrapped(0), True) 
+        self.assertEqual(fn.call_count, 1)
+        self.assertEqual(backend, None)
+
+        self.assertEqual(fn_wrapped(0), True) 
+        self.assertEqual(fn.call_count, 2)
+        self.assertEqual(backend, None)
+
+        self.assertEqual(fn_wrapped(1), True) 
+        self.assertEqual(fn.call_count, 3)
+        self.assertEqual(backend, None)
+
+    def test_pure_none_backend_kwargs(self):
+        fn = MagicMock(
+            name = 'fn',
+            return_value = True
+        )
+        backend = None
+        pure_dec = pure(backend)
+        fn_wrapped = pure_dec(fn)
+
+        self.assertEqual(fn_wrapped(test=0), True) 
+        self.assertEqual(fn.call_count, 1)
+        self.assertEqual(backend, None)
+
+        self.assertEqual(fn_wrapped(test=0), True) 
+        self.assertEqual(fn.call_count, 2)
+        self.assertEqual(backend, None)
+
+        self.assertEqual(fn_wrapped(test=1), True) 
+        self.assertEqual(fn.call_count, 3)
+        self.assertEqual(backend, None)
+
     def test_pure_own_backend(self):
         fn = MagicMock(
             name = 'fn',
