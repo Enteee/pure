@@ -20,8 +20,21 @@ _Decorator for pure functions_
 ```
 
 ## Usage
-```
+```python
+In [1]: from pure import *
 
+In [2]: @pure
+   ...: def f(x):
+   ...:     print('x: {}, x+1: {}'.format(x, x+1))
+   ...:     return x+1
+   ...: 
+
+In [3]: f(1)
+x: 1, x+1: 2
+Out[3]: 2
+
+In [4]: f(1)
+Out[4]: 2
 ```
 
 [python]: https://www.python.org/
