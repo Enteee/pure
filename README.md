@@ -12,14 +12,13 @@ From wikipedia:
 > 2. Evaluation of the result does not cause any semantically observable side effect or output, such as mutation of mutable objects or output to I/O devices (usually—see below).
 
 <details><summary>## Prerequisites</summary>
-<p>
+
 * [python]:
   - 3.4
   - 3.5
   - 3.5-dev
   - nightly
 * [pip](https://pypi.python.org/pypi/pip)
-</p>
 </details>
 
 ## Installation
