@@ -11,7 +11,9 @@ From wikipedia:
 > 1. The function always evaluates the same result value given the same argument value(s). The function result value cannot depend on any hidden information or state that may change while program execution proceeds or between different executions of the program, nor can it depend on any external input from I/O devices (usually—see below).
 > 2. Evaluation of the result does not cause any semantically observable side effect or output, such as mutation of mutable objects or output to I/O devices (usually—see below).
 
-<details><summary>## Prerequisites</summary>
+<details>
+
+<summary>## Prerequisites</summary>
 
 * [python]:
   - 3.4
