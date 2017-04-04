@@ -51,7 +51,8 @@ Out[4]: 2
 
 ### Fibonacci Example
 
-without @pure:
+![Fibonacci Example](https://github.com/Enteee/pure/blob/develop/doc/fibonacci.gif?raw=true "Fibonacci Example")
+
 
 
 
