@@ -3,8 +3,8 @@ _Decorator for pure functions_
 
 | Branch  | Build  | Coverage |
 | ------- | ------ | -------- |
-| master  | [![Build Status master]](https://travis-ci.org/Enteee/pure) | [![Coverage Status master]](https://coveralls.io/github/Enteee/pure?branch=master) |
-| develop  | [![Build Status develop]](https://travis-ci.org/Enteee/pure) | [![Coverage Status develop]](https://coveralls.io/github/Enteee/pure?branch=develop) |
+| master  | [![Build Status master]](https://travis-ci.com/Enteee/pure) | [![Coverage Status master]](https://coveralls.io/github/Enteee/pure?branch=master) |
+| develop  | [![Build Status develop]](https://travis-ci.com/Enteee/pure) | [![Coverage Status develop]](https://coveralls.io/github/Enteee/pure?branch=develop) |
 
 ## Prerequisites
 * [python]:
@@ -39,7 +39,7 @@ Out[4]: 2
 
 [python]: https://www.python.org/
 
-[Build Status master]: https://travis-ci.org/Enteee/pure.svg?branch=master
+[Build Status master]: https://travis-ci.com/Enteee/pure.svg?branch=master
 [Coverage Status master]: https://coveralls.io/repos/github/Enteee/pure/badge.svg?branch=master
-[Build Status develop]: https://travis-ci.org/Enteee/pure.svg?branch=develop
+[Build Status develop]: https://travis-ci.com/Enteee/pure.svg?branch=develop
 [Coverage Status develop]: https://coveralls.io/repos/github/Enteee/pure/badge.svg?branch=develop
